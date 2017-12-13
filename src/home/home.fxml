@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane fx:id="MainPageContainer" maxHeight="1.7976931348623157E308"
+	maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity"
+	prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.141"
+	xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.homeController">
+	<columnConstraints>
+		<ColumnConstraints halignment="LEFT" hgrow="ALWAYS"
+			maxWidth="-Infinity" />
+		<ColumnConstraints halignment="LEFT" hgrow="ALWAYS"
+			maxWidth="1.7976931348623157E308" />
+		<ColumnConstraints halignment="LEFT" hgrow="ALWAYS"
+			maxWidth="1.7976931348623157E308" />
+	</columnConstraints>
+	<rowConstraints>
+		<RowConstraints maxHeight="1.7976931348623157E308"
+			valignment="CENTER" vgrow="ALWAYS" />
+		<RowConstraints maxHeight="1.7976931348623157E308"
+			valignment="CENTER" vgrow="ALWAYS" />
+		<RowConstraints maxHeight="1.7976931348623157E308"
+			valignment="CENTER" vgrow="ALWAYS" />
+		<RowConstraints maxHeight="1.7976931348623157E308"
+			valignment="CENTER" vgrow="ALWAYS" />
+		<RowConstraints maxHeight="1.7976931348623157E308"
+			valignment="CENTER" vgrow="ALWAYS" />
+	</rowConstraints>
+	<children>
+		<Button fx:id="FryBtn" mnemonicParsing="false" onAction="#GetFryScreen"
+			text="Fry" />
+		<Button fx:id="PantryBtn" mnemonicParsing="false" onAction="#GetPantryScreen"
+			text="Pantry" GridPane.rowIndex="1" />
+		<Button fx:id="BroilBtn" mnemonicParsing="false" onAction="#GetBroilScreen"
+			text="Broil" GridPane.rowIndex="2" />
+		<Button fx:id="SauteBtn" mnemonicParsing="false" onAction="#GetSauteScreen"
+			text="Saute" GridPane.rowIndex="3" />
+		<Button fx:id="PizzaBtn" mnemonicParsing="false" onAction="#GetPizzaScreen"
+			text="Pizza" GridPane.rowIndex="4" />
+		<Label fx:id="Fry_Time" text="Fry_Time" GridPane.columnIndex="1" />
+		<Label fx:id="Pantry_Time" text="Pantry_Label"
+			GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="1"
+			GridPane.vgrow="ALWAYS" />
+		<Label fx:id="Broil_Time" text="Broil_Label"
+			GridPane.columnIndex="1" GridPane.rowIndex="2" />
+		<Label fx:id="Saute_Time" text="Saute_Label"
+			GridPane.columnIndex="1" GridPane.rowIndex="3" />
+		<Label fx:id="Pizza_Time" text="Pizza_Label"
+			GridPane.columnIndex="1" GridPane.rowIndex="4" />
+		<Button fx:id="AddNewTableBtn" mnemonicParsing="false"
+			onAction="#GetNewTableScreen" text="Add New Table"
+			GridPane.columnIndex="2" />
+		<Button fx:id="AddToTable" mnemonicParsing="false" onAction="#GetNewTableScreen"
+			text="Add To Table" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+		<Button fx:id="AddFood" mnemonicParsing="false" onAction="#GetNewTableScreen"
+			text="Add Food To Table" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+		<Button fx:id="EndTable" mnemonicParsing="false" onAction="#GetNewTableScreen"
+			text="End_Table" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+	</children>
+</GridPane>
